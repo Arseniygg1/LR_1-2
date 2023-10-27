@@ -1,13 +1,8 @@
-﻿program zad15;
-var a,b,c,k:integer;
-begin
-  k:=0;
-  writeln ('введите числа');
-  readln (a,b,c);
-  if a>0 then k:=k+1;
-  if b>0 then k:=k+1;
-  if c>0 then k:=k+1;
-  writeln ('количество положительных чисел ',k);
-  
-  
+﻿var a:integer;
+begin 
+  write('Введите номер текущего года ');
+  readln(a);
+  if ((a mod 4 = 0) and (a mod 100<>0)) or (a mod 400 = 0)  then 
+      write('Весокостный год')
+  else write('Год не весокостный');
 end.

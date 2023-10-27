@@ -1,9 +1,10 @@
-﻿program zad18;
-var a:integer;
-begin
-  writeln ('введите год');
-  read (a);
-  if (a mod 4=0) and (a mod 100<>0) or (a mod 400=0) then
-    writeln ('год является високосным') else
-    writeln ('год не явлется високосным');
+﻿var a,b,c,min:integer;
+begin 
+
+  write('Ввещдите abc');
+  readln(a,b,c);
+    min:=a;
+  if b<a then min:=b;
+  if c<min then min:=c;
+  write('Min = ',min);
 end.
